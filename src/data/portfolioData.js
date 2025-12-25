@@ -11,7 +11,7 @@ export const techStack = [
 // Skills categorized
 export const skills = {
   frontend: [
-    { name: 'React', level: 90 },
+    { name: 'React', level: 80 },
     { name: 'JavaScript', level: 85 },
     { name: 'TypeScript', level: 80 },
     { name: 'HTML/CSS', level: 95 },
@@ -137,9 +137,9 @@ export const projects = [
 
 // Social Media Links
 export const socialLinks = {
-  github: 'https://github.com/yourusername',
-  linkedin: 'https://linkedin.com/in/yourusername',
-  twitter: 'https://twitter.com/yourusername',
-  email: 'mailto:your.email@example.com',
+  github: 'https://github.com/arashmoradi94',
+  linkedin: 'https://linkedin.com/in/arash-moradi-3537b6290',
+  twitter: 'https://twitter.com/Senatorarmo',
+  email: 'mailto:Moradiarash094@gmail.com',
 };
 
