@@ -1,4 +1,4 @@
-<img width="1902" height="937" alt="image" src="https://github.com/user-attachments/assets/1ee83fa4-fd2e-45a2-a24b-f117e3f4d0ea" />
+<img width="1902" height="937" style="border-radius:5px" alt="image" src="https://github.com/user-attachments/assets/1ee83fa4-fd2e-45a2-a24b-f117e3f4d0ea" />
 # Arash | Front-End Developer Portfolio
 
 This is my personal portfolio website built with **React** and **Vite**.
