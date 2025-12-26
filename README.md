@@ -19,12 +19,13 @@ I enjoy building clean, responsive, and user-friendly interfaces and I'm continu
 - Responsive design
 - Component-based architecture
 - Clean and readable code
+  
+## 🌐 Live Demo
+https://arashmoradi94.github.io/Portfolio/
 
 ## 🔧 Setup & Run Locally
 
 ```bash
 npm install
 npm run dev
-
-## 🌐 Live Demo
-https://arashmoradi94.github.io/Portfolio/
+```
