@@ -196,7 +196,7 @@ const Hero = () => {
                 {/* Image Container with Gradient Overlay */}
                 <div className="relative overflow-hidden rounded-xl">
                   <motion.img
-                    src={`${import.meta.env.BASE_URL}profile.jpg`}
+                    src={`${import.meta.env.BASE_URL}profile.png`}
                     alt="Profile"
                     className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 object-cover rounded-xl"
                     onError={(e) => {
