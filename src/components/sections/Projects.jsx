@@ -6,11 +6,28 @@ import SpotlightCard from '../common/SpotlightCard';
 import TiltCard from '../common/TiltCard';
 import useSoundFx from '../../hooks/useSoundFx';
 import { useCursor } from '../../contexts/CursorContext';
+import wpuImage from '../../assets/images/wpu.png';
 
 const Projects = () => {
   const { t } = useTranslation();
   const { handleHover, handleClick } = useSoundFx();
   const { setVariant } = useCursor();
+
+  // Image mapping for local images
+  const imageMap = {
+    '/images/wpu.png': wpuImage,
+  };
+
+  // Helper function to get image URL
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return '';
+    if (imagePath.startsWith('http')) return imagePath;
+    // Check if it's a local image that we've imported
+    if (imageMap[imagePath]) return imageMap[imagePath];
+    // Fallback to public folder with BASE_URL
+    const cleanPath = imagePath.replace(/^\//, '');
+    return `${import.meta.env.BASE_URL}${cleanPath}`;
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -64,9 +81,13 @@ const Projects = () => {
                 data-project-image
               >
                 <img
-                  src={project.image}
+                  src={getImageUrl(project.image)}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  onError={(e) => {
+                    console.error('Image failed to load:', project.image, 'Resolved URL:', getImageUrl(project.image));
+                    e.target.src = 'https://via.placeholder.com/800x400/1a1a2e/00d9ff?text=Image+Not+Found';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent" />
               </div>
