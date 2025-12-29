@@ -12,14 +12,14 @@ export const techStack = [
 export const skills = {
   frontend: [
     { name: 'React', level: 80 },
-    { name: 'JavaScript', level: 85 },
-    { name: 'TypeScript', level: 80 },
+    { name: 'JavaScript', level: 60 },
+    { name: 'TypeScript', level: 50 },
     { name: 'HTML/CSS', level: 95 },
     { name: 'Tailwind CSS', level: 90 },
-    { name: 'Next.js', level: 75 },
+    { name: 'Next.js', level: 60 },
   ],
   tools: [
-    { name: 'Git', level: 85 },
+    { name: 'Git', level: 30 },
     { name: 'VS Code', level: 95 },
     { name: 'Figma', level: 70 },
     { name: 'Webpack', level: 75 },
